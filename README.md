@@ -58,7 +58,7 @@ Key Findings:
 
 Visualization:
 
-- Chart: Average BMI by Age Group and Sex
+- Chart-Average BMI by Age Group and Sex:
 An Excel chart was created from a pivot table to visualize average BMI across age groups and sex.
 The visualization makes it easier to compare average BMI between males and females within each age group.
 

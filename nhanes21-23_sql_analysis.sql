@@ -166,6 +166,7 @@ FROM body_measurements AS b
 INNER JOIN demographics AS d
 	ON b.SEQN = d.SEQN
 WHERE b.BMI_numeric IS NOT NULL
+	AND d.RIDAGEYR >= 20
 GROUP BY sex;
 
 -- Calculate average bmi for each age group
@@ -274,7 +275,7 @@ ORDER BY
 /*PROJECT FINDINGS
 Analysis population: NHANES 2021-2023 participants aged 20+ with recorded BMI.
 
-1. 98.83%  of participants aged 20+ have their BMI recorded.
+1. 99.83%  of participants aged 20+ have their BMI recorded.
 2. Average BMI varied across age and sex groups.
 3. In every age group, females had a higher average BMI than males.
 3. The highest average BMI in this analysis was 31.06 among females ages 40-59.
